@@ -15,8 +15,8 @@ import re as regex #regular expressions are fun
 import time #time, yo
 
 #CONFIGURATION -------------------------------------------------
-location = "http://pastebin.com/raw.php?i=dQaYvdbY" #URI of authorized_keys
-users_list = ['krtek'] #Username(s) to update
+location = "http://<host>/<file>" #URI of authorized_keys
+users_list = ['<user>'] #Username(s) to update
 valid_uri_re = regex.compile('^(http|https)://') #RegEx for verifying valid URI
 valid_keys_re = regex.compile('^(ssh-rsa|ssh-dsa)') #RegEx for verifying valid auth_keys file
 if _platform == "linux" or _platform == "linux2":
